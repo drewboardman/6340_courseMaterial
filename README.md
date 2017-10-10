@@ -10,13 +10,13 @@ sudo apt-get install openssh-server
 
   2. Set up the network and shared folder
     - NAT
-    - Add port with something like `{ hostPort: 22, guestPort: 2222 }`
+    - Add port with something like `{ hostPort: 3022, guestPort: 22 }`
     - for shared folder, select `auto-mount` and `make permanent`
 
   3. Restart the VM
 
   4. ssh into the VM
-    - `TERM=xterm ssh -Xp 2222 cs6430@localhost` (actually type `localhost`)
+    - `TERM=xterm ssh -Xp 3022 cs6430@localhost` (actually type `localhost`)
 
   5. Add your user to the vbox group for shared folders
     - `sudo adduser cs6340 vboxsf`
